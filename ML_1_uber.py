@@ -33,7 +33,7 @@ df['distance'] = df.apply(
 )
 
 sns.scatterplot(df, y="fare_amount", x="passenger_count")
-df = df[df["passenger_count"] < 150]
+df = df[df["passenger_count"] < 15]
 
 def remove_outliers(feature):
     global df

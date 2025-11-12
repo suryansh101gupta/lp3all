@@ -12,7 +12,7 @@ def gradient_descent(starting_x, learning_rate, num_iterations):
         grad = derivative(x)
         x = x - learning_rate * grad
         gd.append(x)
-        print(f"Iteration {i+1}: x = {x}, f(x) = {func(x)}")
+        print("iteration: ", i+1, " x = ", x, ", function: ", func(x))
     
     return x
 
@@ -21,7 +21,7 @@ learning_rate = 0.1
 num_iterations = 50
 
 min_x = gradient_descent(starting_x, learning_rate, num_iterations)
-print(f"Local minimum occurs at x = {min_x}")
+print("local minima is", min_x)
 
 import seaborn as sns
 
